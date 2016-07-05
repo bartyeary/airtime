@@ -1,0 +1,44 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:f0801c88a24d7c99712c43080e23b306:3ded2acd0b5a80aea6cb098362d36f04:bb2a04c9a012266229ced59c058cd1e2$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(dots.png);}
+
+.dot_00000 {width:50px; height:20px; background-position: -1px -1px}
+.dot_00001 {width:50px; height:20px; background-position: -53px -1px}
+.dot_00002 {width:50px; height:20px; background-position: -105px -1px}
+.dot_00003 {width:50px; height:20px; background-position: -157px -1px}
+.dot_00004 {width:50px; height:20px; background-position: -209px -1px}
+.dot_00005 {width:50px; height:20px; background-position: -261px -1px}
+.dot_00006 {width:50px; height:20px; background-position: -313px -1px}
+.dot_00007 {width:50px; height:20px; background-position: -365px -1px}
+.dot_00008 {width:50px; height:20px; background-position: -417px -1px}
+.dot_00009 {width:50px; height:20px; background-position: -469px -1px}
+.dot_00010 {width:50px; height:20px; background-position: -521px -1px}
+.dot_00011 {width:50px; height:20px; background-position: -573px -1px}
+.dot_00012 {width:50px; height:20px; background-position: -625px -1px}
+.dot_00013 {width:50px; height:20px; background-position: -677px -1px}
+.dot_00014 {width:50px; height:20px; background-position: -729px -1px}
+.dot_00015 {width:50px; height:20px; background-position: -781px -1px}
+.dot_00016 {width:50px; height:20px; background-position: -833px -1px}
+.dot_00017 {width:50px; height:20px; background-position: -885px -1px}
+.dot_00018 {width:50px; height:20px; background-position: -937px -1px}
+.dot_00019 {width:50px; height:20px; background-position: -989px -1px}
+.dot_00020 {width:50px; height:20px; background-position: -1041px -1px}
+.dot_00021 {width:50px; height:20px; background-position: -1093px -1px}
+.dot_00022 {width:50px; height:20px; background-position: -1145px -1px}
+.dot_00023 {width:50px; height:20px; background-position: -1197px -1px}
+.dot_00024 {width:50px; height:20px; background-position: -1249px -1px}
+.dot_00025 {width:50px; height:20px; background-position: -1301px -1px}
+.dot_00026 {width:50px; height:20px; background-position: -1353px -1px}
+.dot_00027 {width:50px; height:20px; background-position: -1405px -1px}
+.dot_00028 {width:50px; height:20px; background-position: -1457px -1px}
+.dot_00029 {width:50px; height:20px; background-position: -1509px -1px}

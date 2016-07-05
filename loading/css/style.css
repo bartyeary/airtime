@@ -9,22 +9,31 @@
     font-style: normal;
 }
 
+
 body {
-	background-color: "#000000";
+	background-color: #000000;
+}
+#dotholder {
+  position:absolute;
+  color: #ffffff;
+  font-family: 'Bariol';
+  font-size: 2em;
+  left: 50px;
+  top: 0px;
 }
 
 #dots {
-  position:absolute;
-  left: 100px;
-  top: 300px;
-  width: 100px;
-  height: 40px;
+  position: relative;
+  left: 110px;
+  top: -55px;
+  width: 50px;
+  height: 20px;
   display: block;
   background-image: url("../images/dots.png");
-  animation: dots .4s steps(30) infinite;
+  animation: dots .8s steps(10) infinite;
 }
 @keyframes dots {
  100% {
-   background-position: -1000px;
+   background-position: -1560px;
  }
 }
