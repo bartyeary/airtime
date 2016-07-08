@@ -27,8 +27,8 @@ body {
 
 #dots {
   position: relative;
-  left: 183px;
-  top: -54px;
+  left: 350px;
+  top: -123px;
   width: 50px;
   height: 20px;
   display: block;
@@ -54,8 +54,8 @@ body {
 
 #bkgrdHolder {
   position:absolute;
-  width: 1322px;
-  height: 944px;
+  width: 1400px;
+  height: 1200px;
   top: 50%;
   left: 50%;
   margin: 100px 0 0 -200px;
@@ -63,9 +63,9 @@ body {
 
 #blurred {
   position: relative;
-  width: 1322px;
-  height: 944px;
+  width: 1400px;
+  height: 1200px;
   top: -600px;
   left: -450px;
-  background-image: url("../images/backgroundBlur.png");
+  background-image: url("../images/Browser_connecting.png");
 }
