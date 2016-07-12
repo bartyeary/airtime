@@ -32,7 +32,7 @@ body {
   width: 50px;
   height: 20px;
   display: block;
-  background-image: url("../images/dotsBlack.png");
+  background-image: url("../images/dots.png");
   animation: dots .8s steps(10) infinite;
 }
 @keyframes dots {
