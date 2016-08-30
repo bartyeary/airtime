@@ -9,6 +9,7 @@
     font-style: normal;
 }
 
+<<<<<<< HEAD
 
 body {
 	background-color: #FFFFFF;
@@ -69,3 +70,24 @@ body {
   left: -450px;
   background-image: url("../images/Browser_connecting.png");
 }
+=======
+body {
+	background-color: "#000000";
+}
+
+#dots {
+  position:absolute;
+  left: 100px;
+  top: 300px;
+  width: 100px;
+  height: 40px;
+  display: block;
+  background-image: url("../images/dots.png");
+  animation: dots .4s steps(30) infinite;
+}
+@keyframes dots {
+ 100% {
+   background-position: -1000px;
+ }
+}
+>>>>>>> master
