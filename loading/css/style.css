@@ -10,6 +10,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 body {
 	background-color: #FFFFFF;
@@ -71,6 +72,8 @@ body {
   background-image: url("../images/Browser_connecting.png");
 }
 =======
+=======
+>>>>>>> master
 body {
 	background-color: "#000000";
 }
@@ -89,5 +92,9 @@ body {
  100% {
    background-position: -1000px;
  }
+<<<<<<< HEAD
+}
+>>>>>>> master
+=======
 }
 >>>>>>> master
