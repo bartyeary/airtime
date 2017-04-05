@@ -102,6 +102,39 @@ body {
  }
 }
 
+#typingBubble {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  display: block;
+  background-image: url("../images/typingBubble.png");
+  animation: typerBubble .8s steps(30) infinite;
+}
+@keyframes typerBubble {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1800px;
+ }
+}
+#typingBubbleSmall {
+  position: relative;
+  width: 30px;
+  height: 18px;
+  display: block;
+  background-image: url("../images/typingBubbleSmall.png");
+  animation: typerBubbleSmall .8s steps(30) infinite;
+}
+@keyframes typerBubbleSmall {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -900px;
+ }
+}
+
 #spinnerBlack {
   position: relative;
   top:10px;
