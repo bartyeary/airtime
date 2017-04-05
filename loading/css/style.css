@@ -21,25 +21,28 @@ body {
   color: #ffffff;
 }
 
-#dotholder {
+#col1 {
   position:absolute;
-  left: -150px;
-  width: 300px;
-  height: 200px;
-  top: 10%;
-  left: 50%;
+  top: 10px;
+  left: 10px;
 }
 
-#loading {
+#col2 {
+  position:absolute;
+  top: 10px;
+  left: 100px;
+}
+
+#loadingWhite {
   position: relative;
 
   width: 40px;
   height: 40px;
   display: block;
   background-image: url("../images/loadingWhite.png");
-  animation: loader .8s steps(30) infinite;
+  animation: loaderWhite .8s steps(30) infinite;
 }
-@keyframes loader {
+@keyframes loaderWhite {
  from {
    background-position: 0px;
  }
@@ -48,15 +51,33 @@ body {
  }
 }
 
-#typing {
+#loadingBlack {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url("../images/loadingBlack.png");
+  animation: loaderBlack .8s steps(30) infinite;
+}
+@keyframes loaderBlack {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1200px;
+ }
+}
+
+#typingWhite {
   position: relative;
   width: 40px;
   height: 40px;
   display: block;
   background-image: url("../images/typingWhite.png");
-  animation: typer .8s steps(25) infinite;
+  animation: typerWhite .8s steps(25) infinite;
 }
-@keyframes typer {
+@keyframes typerWhite {
  from {
    background-position: 0px;
  }
@@ -64,6 +85,60 @@ body {
    background-position: -1000px;
  }
 }
+
+#typingBlack {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url("../images/typingBlack.png");
+  animation: typerBlack .8s steps(25) infinite;
+}
+@keyframes typerBlack {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1000px;
+ }
+}
+
+#spinnerBlack {
+  position: relative;
+  top:10px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticSpinnerBlack.png");
+  animation: spinnerBlack .8s linear infinite;
+}
+@keyframes spinnerBlack {
+ from {
+   transform: rotate(0deg); 
+ }
+ to {
+   transform: rotate(360deg); 
+ }
+}
+
+#spinnerWhite {
+  position: relative;
+  top:20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticSpinnerWhite.png");
+  animation: spinnerWhite .8s linear infinite;
+}
+@keyframes spinnerWhite {
+ from {
+   transform: rotate(0deg); 
+ }
+ to {
+   transform: rotate(360deg); 
+ }
+}
+
 
 #react-lol {
   position: relative;
