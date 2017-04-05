@@ -9,92 +9,221 @@
     font-style: normal;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 body {
-	background-color: #FFFFFF;
+	background-color: #713DBF;
 }
+
+#titles {
+  margin-top: 15px;
+  font-family: 'Bariol';
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
 #dotholder {
   position:absolute;
+  left: -150px;
   width: 300px;
   height: 200px;
-  color: #ffffff;
-  font-family: 'Bariol';
-  font-size: 2em;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  margin: -75px 0 0 -150px;
 }
 
-#dots {
+#loading {
   position: relative;
-  left: -120px;
-  top: -160px;
-  width: 50px;
-  height: 20px;
-  display: block;
-  background-image: url("../images/dots.png");
-  animation: dots .8s steps(10) infinite;
-}
-@keyframes dots {
- 100% {
-   background-position: -1560px;
- }
-}
 
-#clearPanel {
-  position: relative;
-  left: -20px;
-  top: -107px;
-  width: 270px;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
-}
-
-#bkgrdHolder {
-  position:absolute;
-  width: 1400px;
-  height: 1200px;
-  top: 50%;
-  left: 50%;
-  margin: 100px 0 0 -200px;
-}
-
-#blurred {
-  position: relative;
-  width: 1400px;
-  height: 1200px;
-  top: -600px;
-  left: -450px;
-  background-image: url("../images/Browser_connecting.png");
-}
-=======
-=======
->>>>>>> master
-body {
-	background-color: "#000000";
-}
-
-#dots {
-  position:absolute;
-  left: 100px;
-  top: 300px;
-  width: 100px;
+  width: 40px;
   height: 40px;
   display: block;
-  background-image: url("../images/dots.png");
-  animation: dots .4s steps(30) infinite;
+  background-image: url("../images/loadingWhite.png");
+  animation: loader .8s steps(30) infinite;
 }
-@keyframes dots {
- 100% {
+@keyframes loader {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1200px;
+ }
+}
+
+#typing {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url("../images/typingWhite.png");
+  animation: typer .8s steps(25) infinite;
+}
+@keyframes typer {
+ from {
+   background-position: 0px;
+ }
+ to {
    background-position: -1000px;
  }
-<<<<<<< HEAD
 }
->>>>>>> master
-=======
+
+#react-lol {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_lol.png");
+  animation: lol .8s steps(24) infinite;
 }
->>>>>>> master
+@keyframes lol {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-angry {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_angry.png");
+  animation: angry .8s steps(24) infinite;
+}
+@keyframes angry {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-wtf {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_wtf.png");
+  animation: wtf .8s steps(24) infinite;
+}
+@keyframes wtf {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-wow {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_wow.png");
+  animation: wow .8s steps(24) infinite;
+}
+@keyframes wow {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-sad {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_sad.png");
+  animation: sad .8s steps(24) infinite;
+}
+@keyframes sad {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-love {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_love.png");
+  animation: love .8s steps(24) infinite;
+}
+@keyframes love {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-party {
+  position: relative;
+  left: -5px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_party.png");
+  animation: party .8s steps(24) infinite;
+}
+@keyframes party {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-pow {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_pow.png");
+  animation: pow .8s steps(23) infinite;
+}
+@keyframes pow {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1840px;
+ }
+}
+
+#react-hi {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_hi.png");
+  animation: hi .8s steps(24) infinite;
+}
+@keyframes hi {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
