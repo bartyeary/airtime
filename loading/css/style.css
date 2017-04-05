@@ -14,15 +14,14 @@ body {
 }
 
 #titles {
-  margin-top: 15px;
   font-family: 'Bariol';
+  margin-top: 20px;
   font-size: 1.2em;
   color: #ffffff;
 }
 
 #col1 {
   position:absolute;
-  top: 10px;
   left: 10px;
 }
 
@@ -34,7 +33,6 @@ body {
 
 #loadingWhite {
   position: relative;
-
   width: 40px;
   height: 40px;
   display: block;
@@ -52,7 +50,6 @@ body {
 
 #loadingBlack {
   position: relative;
-
   width: 40px;
   height: 40px;
   display: block;
@@ -121,6 +118,7 @@ body {
 
 #typingBubbleSmall {
   position: relative;
+  top: 10px;
   width: 30px;
   height: 18px;
   display: block;
