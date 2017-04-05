@@ -125,7 +125,7 @@ body {
   height: 18px;
   display: block;
   background-image: url("../images/typingBubbleSmall.png");
-  animation: typerBubbleSmall .7s steps(30) infinite;
+  animation: typerBubbleSmall .8s steps(30) infinite;
 }
 @keyframes typerBubbleSmall {
  from {
