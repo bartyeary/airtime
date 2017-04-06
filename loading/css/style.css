@@ -165,7 +165,8 @@ body {
 
 #spinnerWhite {
   position: relative;
-  top: 15px;
+  top: -8px;
+  left: 20px;
   width: 13px;
   height: 13px;
   display: block;
@@ -179,6 +180,63 @@ body {
  to {
    transform: rotate(360deg); 
  }
+}
+
+#checkWhite {
+  position: relative;
+  top: 3px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticCheckWhite.png");
+}
+
+#checkBlack {
+  position: relative;
+  top: -10px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticCheckBlack.png");
+}
+
+#failWhite {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticXWhite.png");
+}
+
+#failBlack {
+  position: relative;
+  top: -13px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticXBlack.png");
+}
+
+#resendWhite {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticResendWhite.png");
+}
+
+#resendBlack {
+  position: relative;
+  top: -13px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticResendBlack.png");
 }
 
 #botSpin {
