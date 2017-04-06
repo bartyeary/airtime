@@ -42,6 +42,7 @@ body {
 
 #loadingWhite {
   position: relative;
+  top:15px;
   width: 40px;
   height: 10px;
   display: block;
@@ -59,6 +60,7 @@ body {
 
 #loadingBlack {
   position: relative;
+  top: 5px;
   width: 40px;
   height: 10px;
   display: block;
@@ -145,7 +147,7 @@ body {
 
 #spinnerBlack {
   position: relative;
-  top:10px;
+  top: 5px;
   width: 13px;
   height: 13px;
   display: block;
@@ -163,7 +165,7 @@ body {
 
 #spinnerWhite {
   position: relative;
-  top:20px;
+  top: 15px;
   width: 13px;
   height: 13px;
   display: block;
@@ -330,7 +332,7 @@ body {
   height: 80px;
   display: block;
   background-image: url("../images/react_party.png");
-  animation: party .8s steps(24) infinite;
+  animation: party 1.2s steps(24) infinite;
 }
 @keyframes party {
  from {
