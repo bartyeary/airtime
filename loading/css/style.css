@@ -10,7 +10,16 @@
 }
 
 body {
-	background-color: #713DBF;
+/*	background: #713DBF;
+*/}
+
+#gradientbkgrd {
+  position: absolute;
+  background: linear-gradient(#713dbf, #ffffff);
+  width: 105%;
+  height: 100%;
+  top: -15px;
+  left: -15px;
 }
 
 #titles {
@@ -22,13 +31,13 @@ body {
 
 #col1 {
   position:absolute;
-  left: 10px;
+  left: 30px;
 }
 
 #col2 {
   position:absolute;
   top: 10px;
-  left: 100px;
+  left: 150px;
 }
 
 #loadingWhite {
@@ -170,6 +179,41 @@ body {
  }
 }
 
+#botSpin {
+  position: relative;
+  top: 10px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/iso_bot_spin.png");
+  animation: botSpin .8s steps(23) infinite;
+}
+@keyframes botSpin {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1840px;
+ }
+}
+
+#botTalk {
+  position: relative;
+  top: 20px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/iso_bot_talk.png");
+  animation: botTalk .8s steps(19) infinite;
+}
+@keyframes botTalk {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1520px;
+ }
+}
 
 #react-lol {
   position: relative;
