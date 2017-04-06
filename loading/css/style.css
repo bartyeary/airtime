@@ -34,7 +34,7 @@ body {
 #loadingWhite {
   position: relative;
   width: 40px;
-  height: 40px;
+  height: 10px;
   display: block;
   background-image: url("../images/loadingWhite.png");
   animation: loaderWhite .8s steps(30) infinite;
@@ -51,7 +51,7 @@ body {
 #loadingBlack {
   position: relative;
   width: 40px;
-  height: 40px;
+  height: 10px;
   display: block;
   background-image: url("../images/loadingBlack.png");
   animation: loaderBlack .8s steps(30) infinite;
