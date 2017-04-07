@@ -1,6 +1,7 @@
 var disco = document.getElementById("disco");
 var reflection = document.getElementById("reflection");
 
+
 disco.onmousedown = function(){
 	TweenMax.to(disco, .2, {scale:.8, onComplete:fullsizedisco});
 	TweenMax.to(reflection, .2, {scale:1.7, onComplete:fullsizereflection});
@@ -26,3 +27,4 @@ function returndisco(){
 function returnreflection(){
 	TweenMax.to(reflection, 1, {top:20, ease:Back.easeInOut});
 }
+

@@ -512,6 +512,7 @@ body {
   z-index: 1;
   transform: scale(1.5);
   top: 15px;
+  left: -15px;
   width: 68px;
   height: 68px;
   display: block;
