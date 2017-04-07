@@ -3,6 +3,7 @@ var reflection = document.getElementById("reflection");
 
 disco.onmousedown = function(){
 	TweenMax.to(disco, .2, {scale:.8, onComplete:fullsizedisco});
+	TweenMax.to(reflection, .2, {scale:1.7, onComplete:fullsizereflection});
 }
 
 disco.onmouseup = function(){
@@ -12,6 +13,10 @@ disco.onmouseup = function(){
 
 function fullsizedisco(){
 	TweenMax.to(disco, .2, {scale:1});
+}
+
+function fullsizereflection(){
+	TweenMax.to(reflection, .2, {scale:1.5});
 }
 
 function returndisco(){
