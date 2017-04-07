@@ -275,6 +275,42 @@ body {
  }
 }
 
+#pulseLight {
+  position: relative;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url("../images/pulseLight.png");
+  animation: pulseLight .8s steps(25) infinite;
+}
+@keyframes pulseLight {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1250px;
+ }
+}
+
+#pulseDark {
+  position: relative;
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url("../images/pulseDark.png");
+  animation: pulseDark .8s steps(25) infinite;
+}
+@keyframes pulseDark {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1250px;
+ }
+}
+
 #react-lol {
   position: relative;
   left: -20px;
@@ -390,7 +426,7 @@ body {
   height: 80px;
   display: block;
   background-image: url("../images/react_party.png");
-  animation: party 1.2s steps(24) infinite;
+  animation: party .8s steps(24) infinite;
 }
 @keyframes party {
  from {
