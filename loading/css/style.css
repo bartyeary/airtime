@@ -490,6 +490,7 @@ body {
 
 #disco {
   position: relative;
+  z-index: 2;
   width: 68px;
   height: 68px;
   display: block;
@@ -506,8 +507,10 @@ body {
 }
 
 #reflection {
-  position: relative;
-  top: -20px;
+  position: absolute;
+  z-index: 1;
+  transform: scale(1.5);
+  top: 15px;
   width: 68px;
   height: 68px;
   display: block;

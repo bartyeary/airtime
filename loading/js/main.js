@@ -7,7 +7,7 @@ disco.onmousedown = function(){
 
 disco.onmouseup = function(){
 	TweenMax.to(disco, 2, {top:700, ease:Back.easeOut.config(1), onComplete:returndisco});
-	TweenMax.to(reflection, 2, {top:700, ease:Back.easeOut.config(1), onComplete:returnreflection});
+	TweenMax.to(reflection, 2, {top:720, ease:Back.easeOut.config(1), onComplete:returnreflection});
 }
 
 function fullsizedisco(){
@@ -19,5 +19,5 @@ function returndisco(){
 }
 
 function returnreflection(){
-	TweenMax.to(reflection, 1, {top:10, ease:Back.easeInOut});
+	TweenMax.to(reflection, 1, {top:20, ease:Back.easeInOut});
 }
