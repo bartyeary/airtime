@@ -40,6 +40,12 @@ body {
   left: 150px;
 }
 
+#col3 {
+  position:absolute;
+  top: 10px;
+  left: 250px;
+}
+
 #loadingWhite {
   position: relative;
   top:15px;
@@ -275,6 +281,15 @@ body {
  }
 }
 
+#bot {
+  position: relative;
+  top: 30px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/bot.png");
+}
+
 #pulseLight {
   position: relative;
   top: 30px;
@@ -470,6 +485,41 @@ body {
  }
  to {
    background-position: -1920px;
+ }
+}
+
+#disco {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  display: block;
+  background-image: url("../images/disco.png");
+  animation: disco .8s steps(29) infinite;
+}
+@keyframes disco {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1943px;
+ }
+}
+
+#reflection {
+  position: relative;
+  top: -20px;
+  width: 68px;
+  height: 68px;
+  display: block;
+  background-image: url("../images/reflection.png");
+  animation: reflection .8s steps(25) infinite;
+}
+@keyframes reflection {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -2000px;
  }
 }
 
