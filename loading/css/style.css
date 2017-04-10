@@ -260,13 +260,13 @@ body {
 	display: inline-block;
 
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 26px;
 	padding: 4px 15px;
 	
 	color: #FFF;
 	background-color: #03C294;
-	border-radius: 10px;
+	border-radius: 8px;
 	border: none;
 	outline: 0;
 	box-shadow: 0 5px #00A17B;
@@ -340,6 +340,7 @@ body {
 #botSpin {
   position: absolute;
   top: 325px;
+  left:-20px;
   width: 80px;
   height: 85px;
   display: block;
@@ -362,6 +363,7 @@ body {
 #botTalk {
   position: absolute;
   top: 325px;
+  left:-20px;
   width: 80px;
   height: 85px;
   display: block;
@@ -382,6 +384,7 @@ animation: botTalk .8s steps(19) infinite;
 #bot {
   position: absolute;
   top: 325px;
+  left:-20px;
   width: 80px;
   height: 85px;
   display: block;
