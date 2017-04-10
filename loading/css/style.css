@@ -13,6 +13,10 @@ body {
 /*	background: #713DBF;
 */}
 
+.noselect {
+	user-select: none;
+}
+
 #gradientbkgrd {
   position: absolute;
   background: linear-gradient(#713dbf, #ffffff);
@@ -245,54 +249,60 @@ body {
   background-image: url("../images/optimisticResendBlack.png");
 }
 
-#botSpin {
-  position: relative;
-  top: 10px;
-  width: 80px;
-  height: 85px;
-  display: block;
-  background-image: url("../images/iso_bot_spin.png");
-  animation: botSpin .8s steps(23) infinite;
-}
-@keyframes botSpin {
- from {
-   background-position: 0px;
- }
- to {
-   background-position: -1840px;
- }
+.submitbutton {
+	font-family: 'bariol';
+	cursor: pointer;
+	position: absolute;
+	top: 500px;
+	text-decoration: none;
+	width: 100px;
+	height: 38px;
+	display: inline-block;
+
+	text-align: center;
+	font-size: 1em;
+	line-height: 26px;
+	padding: 4px 15px;
+	
+	color: #FFF;
+	background-color: #03C294;
+	border-radius: 10px;
+	border: none;
+	outline: 0;
+	box-shadow: 0 5px #00A17B;
+
+	transition-property: background, color;
+	transition-duration: .3s, .1s;
+	transition-timing-function: linear;
 }
 
-#botTalk {
-  position: relative;
-  top: 20px;
-  width: 80px;
-  height: 85px;
-  display: block;
-  background-image: url("../images/iso_bot_talk.png");
-  animation: botTalk .8s steps(19) infinite;
-}
-@keyframes botTalk {
- from {
-   background-position: 0px;
- }
- to {
-   background-position: -1520px;
- }
+.submitbutton:hover {
+	position: absolute;
+	top: 502px;
+	box-shadow: 0 3px #00A17B;
+	color: #FFF;
+	background: #03C294;
 }
 
-#bot {
-  position: relative;
-  top: 30px;
-  width: 80px;
-  height: 85px;
-  display: block;
-  background-image: url("../images/bot.png");
+.submitbutton:active {
+	position: absolute;
+	top: 505px;
+	box-shadow: 0 0px #00A17B;
+	color: #FFF;
+	background: #03C294;
+}
+.buttontext {
+	position:absolute;
+	text-align: center;
+	line-height: 26px;
+	padding: 4px 15px;
+
 }
 
 #pulseLight {
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 487px;
+  left:-12px;
   width: 50px;
   height: 50px;
   display: block;
@@ -309,8 +319,9 @@ body {
 }
 
 #pulseDark {
-  position: relative;
-  top: 40px;
+  position: absolute;
+  top: 485px;
+  left:-12px;
   width: 50px;
   height: 50px;
   display: block;
@@ -324,6 +335,57 @@ body {
  to {
    background-position: -1250px;
  }
+}
+
+#botSpin {
+  position: absolute;
+  top: 325px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/iso_bot_spin.png");
+/* 
+  animation: botSpin .8s steps(23) infinite; 
+}
+
+@keyframes botSpin {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1840px;
+ }
+ 
+ */
+}
+
+#botTalk {
+  position: absolute;
+  top: 325px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/iso_bot_talk.png");
+  /* 
+animation: botTalk .8s steps(19) infinite;
+}
+@keyframes botTalk {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1520px;
+ }
+ */
+}
+
+#bot {
+  position: absolute;
+  top: 325px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/bot.png");
 }
 
 #react-lol {
