@@ -269,9 +269,9 @@ body {
 	font-family: 'bariol';
 	cursor: pointer;
 	position: absolute;
-	top: 500px;
+	top: 420px;
 	text-decoration: none;
-	width: 100px;
+	width: 70px;
 	height: 38px;
 	display: inline-block;
 
@@ -294,7 +294,7 @@ body {
 
 .submitbutton:hover {
 	position: absolute;
-	top: 502px;
+	top: 422px;
 	box-shadow: 0 3px #00A17B;
 	color: #FFF;
 	background: #03C294;
@@ -302,7 +302,7 @@ body {
 
 .submitbutton:active {
 	position: absolute;
-	top: 505px;
+	top: 425px;
 	box-shadow: 0 0px #00A17B;
 	color: #FFF;
 	background: #03C294;
@@ -319,7 +319,7 @@ body {
   position: absolute;
   pointer-events: none;
   top: 103px;
-  left: 114px;
+  left: 100px;
   z-index: 4;
   width: 50px;
   height: 50px;
@@ -340,7 +340,7 @@ body {
   position: absolute;
   pointer-events: none;
   top: 105px;
-  left: 114px;
+  left: 100px;
   z-index: 3;
   width: 50px;
   height: 50px;
@@ -357,10 +357,65 @@ body {
  }
 }
 
+/*THIS IS THE BUBBLE STYLING*/
+.menu-balloon,
+.menu-balloon-dark {
+  display: block;
+  position: relative;
+  font-weight: 500;
+}
+
+.menu-balloon {
+  position:absolute;
+  z-index: 5;
+  opacity:0;
+  width:135px;
+  left:80px;
+  top: 350px;
+  color: #222;
+  background-color: white;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+}
+
+.menu-balloon-dark {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+}
+
+.menu-balloon-item {
+  font-family: 'Bariol';
+  margin-top: 4px;
+  font-size: 1em;
+  display: block;
+  padding: 4px 14px 8px 14px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.menu-balloon-ws {
+  border-radius: 6px 6px 6px 0;
+}
+
+.menu-balloon-ws:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: -10px;
+  box-sizing:border-box;
+  border: 5px solid white;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+/*END BUBBLE STYLING*/
+
 #botSpin {
   position: absolute;
   top: 325px;
-  left:-20px;
+  left:-5px;
   width: 80px;
   height: 85px;
   display: block;
@@ -383,7 +438,7 @@ body {
 #botTalk {
   position: absolute;
   top: 325px;
-  left:-20px;
+  left:-5px;
   width: 80px;
   height: 85px;
   display: block;
@@ -404,7 +459,7 @@ animation: botTalk .8s steps(19) infinite;
 #bot {
   position: absolute;
   top: 325px;
-  left:-20px;
+  left:-5px;
   width: 80px;
   height: 85px;
   display: block;

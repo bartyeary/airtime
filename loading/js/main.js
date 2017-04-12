@@ -32,6 +32,7 @@ var botTalk = document.querySelector("#botTalk");
 var bot = document.querySelector("#bot");
 var pulseDark = document.querySelector("#pulseDark");
 var pulseLight = document.querySelector("#pulseLight");
+var bubbleTalk = document.querySelector(".menu-balloon");
 
 var spin = TweenMax.from(botSpin, 0.8, {backgroundPosition:"1840px", paused:true, ease:SteppedEase.config(23)});
 
@@ -48,6 +49,9 @@ var hidepulsedark = TweenMax.to(pulseDark, 2, {opacity:0, paused:true, delay:5})
 var showpulselight = TweenMax.from(pulseLight, 2, {opacity:0, paused:true, delay:2});
 var hidepulselight = TweenMax.to(pulseLight, 2, {opacity:0, paused:true, delay:5});
 
+var showbubble = TweenMax.to(bubbleTalk, .5, {opacity:1, paused:true, delay:0.7});
+var hidebubble = TweenMax.to(bubbleTalk, 2, {opacity:0, paused:true, delay:5});
+
 botbutt.onmousedown = function(){
 	spin.restart();
 	starttalk.restart(true);
@@ -59,22 +63,16 @@ botbutt.onmousedown = function(){
 	showpulselight.restart(true);
 	hidepulsedark.restart(true);
 	hidepulselight.restart(true);
-	
+	showbubble.restart(true);
+	hidebubble.restart(true);		
 }
-
-var bubblebutt = document.querySelector("#typingBubbleSmall");
-var checkBlack = document.querySelector("#checkBlack");
-var checkWhite = document.querySelector("#checkWhite");
-var failBlack = document.querySelector("#failBlack");
-var failWhite = document.querySelector("#failWhite");
-var reactAngry = document.querySelector(".react-angry");
-
 
 var emitterSize = 500,
     dotQuantity = 10,
     dotSizeMin = 80,
     dotSizeMax = 80,
     explosionQuantity = 5;
+    reactAngry = document.querySelector(".react-angry");
 
 var emitters = document.querySelectorAll(".emitter");
 
