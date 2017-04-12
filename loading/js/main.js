@@ -47,7 +47,7 @@ var hidebot = TweenMax.to(bot, 2, {opacity:0, paused:true, delay:5});
 var showpulsedark = TweenMax.from(pulseDark, 2, {opacity:0, paused:true, delay:2});
 var hidepulsedark = TweenMax.to(pulseDark, 2, {opacity:0, paused:true, delay:5});
 
-var showpulselight = TweenMax.from(pulseLight, 2, {opacity:0, paused:true, delay:2});
+var showpulselight = TweenMax.from(pulseLight, 1, {opacity:0, paused:true});
 var hidepulselight = TweenMax.to(pulseLight, 2, {opacity:0, paused:true, delay:5});
 
 var showbubble = TweenMax.to(bubbleTalk, .5, {opacity:1, paused:true, delay:0.7});
