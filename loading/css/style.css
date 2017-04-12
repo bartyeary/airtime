@@ -17,6 +17,22 @@ body {
 	user-select: none;
 }
 
+.emitter {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 300px;
+  left: 600px;
+}
+
+.dot {
+  background-color: #4c9a0f;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; 
+}
+
 #gradientbkgrd {
   position: absolute;
   background: linear-gradient(#713dbf, #ffffff);
@@ -301,8 +317,10 @@ body {
 
 #pulseLight {
   position: absolute;
-  top: 487px;
-  left:-12px;
+  pointer-events: none;
+  top: 103px;
+  left: 114px;
+  z-index: 4;
   width: 50px;
   height: 50px;
   display: block;
@@ -320,8 +338,10 @@ body {
 
 #pulseDark {
   position: absolute;
-  top: 485px;
-  left:-12px;
+  pointer-events: none;
+  top: 105px;
+  left: 114px;
+  z-index: 3;
   width: 50px;
   height: 50px;
   display: block;
@@ -409,7 +429,7 @@ animation: botTalk .8s steps(19) infinite;
  }
 }
 
-#react-angry {
+.react-angry {
   position: relative;
   left: -20px;
   width: 80px;
