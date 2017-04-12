@@ -27,6 +27,7 @@ function returnreflection(){
 	TweenMax.to(reflection, 1, {top:20, ease:Back.easeInOut});
 }
 
+
 var botSpin = document.querySelector("#botSpin");
 var botTalk = document.querySelector("#botTalk");
 var bot = document.querySelector("#bot");
