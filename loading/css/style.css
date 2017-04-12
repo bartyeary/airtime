@@ -266,6 +266,7 @@ body {
 }
 
 .submitbutton {
+  -webkit-appearance:none;
 	font-family: 'bariol';
 	cursor: pointer;
 	position: absolute;
@@ -293,6 +294,7 @@ body {
 }
 
 .submitbutton:hover {
+  -webkit-appearance:none;
 	position: absolute;
 	top: 422px;
 	box-shadow: 0 3px #00A17B;
@@ -301,6 +303,7 @@ body {
 }
 
 .submitbutton:active {
+  -webkit-appearance:none;
 	position: absolute;
 	top: 425px;
 	box-shadow: 0 0px #00A17B;
@@ -308,6 +311,7 @@ body {
 	background: #03C294;
 }
 .buttontext {
+  -webkit-appearance:none;
 	position:absolute;
 	text-align: center;
 	line-height: 26px;
