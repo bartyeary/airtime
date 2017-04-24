@@ -1,31 +1,43 @@
 var disco = document.getElementById("disco");
 var reflection = document.getElementById("reflection");
 
+var color = {hue:0}
+var discocolor = document.querySelector(".discoColor");
+
+TweenMax.to(color, 4, {hue:360, onUpdate:applyHue, onUpdateParams:[discocolor], repeat:-1});
+TweenMax.to(discocolor, 4, {rotation: 180, repeat:-1});
+
+
+function applyHue(element) {
+  element.style.backgroundColor = "hsl(" + color.hue + ", 100%, 50%)"
+}
+
 disco.onmousedown = function(){
-	TweenMax.to(disco, .2, {scale:.8, onComplete:fullsizedisco});
-	TweenMax.to(reflection, .2, {scale:1.7, onComplete:fullsizereflection});
+  TweenMax.to(disco, .2, {scale:.8, onComplete:fullsizedisco});
+  TweenMax.to(reflection, .2, {scale:1.7});
+
 }
 
 disco.onmouseup = function(){
-	TweenMax.to(disco, 2, {top:700, ease:Back.easeOut.config(1), onComplete:returndisco});
-	TweenMax.to(reflection, 2, {top:720, ease:Back.easeOut.config(1), onComplete:returnreflection});
+  TweenMax.to(disco, 2, {scale: 2, top:600, ease:Back.easeOut, onComplete:returndisco});
+  TweenMax.to(reflection, 2, {scale: 3, top:620, ease:Back.easeOut});
+  TweenMax.to(discocolor, 2, {scale: 3, top:620, ease:Back.easeOut});
 }
 
 function fullsizedisco(){
-	TweenMax.to(disco, .2, {scale:1});
+  TweenMax.to(disco, .2, {scale:1});
+  TweenMax.to(discocolor, .2, {scale:1});
+  TweenMax.to(reflection, .2, {scale:1.5});
 }
 
-function fullsizereflection(){
-	TweenMax.to(reflection, .2, {scale:1.5});
-}
+
 
 function returndisco(){
-	TweenMax.to(disco, 1, {top:10, ease:Back.easeInOut});
+  TweenMax.to(disco, 1, {scale: 1, top:10, ease:Back.easeInOut});
+  TweenMax.to(discocolor, 1, {scale: 1, top:15, ease:Back.easeInOut});
+  TweenMax.to(reflection, 1, {scale: 1.5, top:15, ease:Back.easeInOut});
 }
 
-function returnreflection(){
-	TweenMax.to(reflection, 1, {top:20, ease:Back.easeInOut});
-}
 
 
 var botSpin = document.querySelector("#botSpin");
@@ -47,7 +59,7 @@ var hidebot = TweenMax.to(bot, 2, {opacity:0, paused:true, delay:5});
 var showpulsedark = TweenMax.from(pulseDark, 2, {opacity:0, paused:true, delay:2});
 var hidepulsedark = TweenMax.to(pulseDark, 2, {opacity:0, paused:true, delay:5});
 
-var showpulselight = TweenMax.from(pulseLight, 1, {opacity:0, paused:true});
+var showpulselight = TweenMax.from(pulseLight, .1, {opacity:0, paused:true});
 var hidepulselight = TweenMax.to(pulseLight, 2, {opacity:0, paused:true, delay:5});
 
 var showbubble = TweenMax.to(bubbleTalk, .5, {opacity:1, paused:true, delay:0.7});
@@ -68,7 +80,7 @@ botbutt.onmousedown = function(){
 	hidebubble.restart(true);		
 }
 
-var emitterSize = 500,
+var emitterSize = 200,
     dotQuantity = 10,
     dotSizeMin = 80,
     dotSizeMax = 80,
@@ -108,7 +120,7 @@ function createExplosion(container) {
     dot.className = "react-angry";
     size = getRandom(dotSizeMin, dotSizeMax);
     container.appendChild(dot);
-    angle = Math.random() * Math.PI * 2; //random angle
+    angle = 170; //random angle
     //figure out the maximum distance from the center, factoring in the size of the dot (it must never go outside the circle), and then pick a random spot along that length where we'll plot the point. 
     length = Math.random() * (emitterSize / 2 - size / 2); 
     //place the dot at a random spot within the emitter, and set its size.

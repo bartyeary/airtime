@@ -633,10 +633,24 @@ animation: botTalk .8s steps(19) infinite;
  }
 }
 
+.discoColor {
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  height: 80px;
+  width: 50px;
+  opacity: .5;
+  display: block;
+  border-radius:100px 100px 100px 100px;
+  -webkit-filter:blur(5px);
+  filter: blur(20px);
+}
+
+
 #disco {
   position: relative;
   top: 10px;
-  z-index: 2;
+  z-index: 3;
   width: 68px;
   height: 68px;
   display: block;
@@ -654,7 +668,7 @@ animation: botTalk .8s steps(19) infinite;
 
 #reflection {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   transform: scale(1.5);
   top: 15px;
   left: -15px;
