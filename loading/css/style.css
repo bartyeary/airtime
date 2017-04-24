@@ -10,21 +10,680 @@
 }
 
 body {
-	background-color: "#000000";
+/*	background: #713DBF;
+*/}
+
+.noselect {
+	user-select: none;
 }
 
-#dots {
-  position:absolute;
-  left: 100px;
-  top: 300px;
+.emitter {
+  position: absolute;
   width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 300px;
+  left: 600px;
+}
+
+.dot {
+  background-color: #4c9a0f;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; 
+}
+
+#gradientbkgrd {
+  position: absolute;
+  background: linear-gradient(#713dbf, #ffffff);
+  width: 105%;
+  height: 100%;
+  top: -15px;
+  left: -15px;
+}
+
+#titles {
+  font-family: 'Bariol';
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+#col1 {
+  position:absolute;
+  left: 30px;
+}
+
+#col2 {
+  position:absolute;
+  top: 10px;
+  left: 150px;
+}
+
+#col3 {
+  position:absolute;
+  top: 10px;
+  left: 250px;
+}
+
+#loadingWhite {
+  position: relative;
+  top:15px;
+  width: 40px;
+  height: 10px;
+  display: block;
+  background-image: url("../images/loadingWhite.png");
+  animation: loaderWhite .8s steps(30) infinite;
+}
+@keyframes loaderWhite {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1200px;
+ }
+}
+
+#loadingBlack {
+  position: relative;
+  top: 5px;
+  width: 40px;
+  height: 10px;
+  display: block;
+  background-image: url("../images/loadingBlack.png");
+  animation: loaderBlack .8s steps(30) infinite;
+}
+@keyframes loaderBlack {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1200px;
+ }
+}
+
+#typingWhite {
+  position: relative;
+  width: 40px;
   height: 40px;
   display: block;
-  background-image: url("../images/dots.png");
-  animation: dots .4s steps(30) infinite;
+  background-image: url("../images/typingWhite.png");
+  animation: typerWhite .8s steps(25) infinite;
 }
-@keyframes dots {
- 100% {
+@keyframes typerWhite {
+ from {
+   background-position: 0px;
+ }
+ to {
    background-position: -1000px;
  }
 }
+
+#typingBlack {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url("../images/typingBlack.png");
+  animation: typerBlack .8s steps(25) infinite;
+}
+@keyframes typerBlack {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1000px;
+ }
+}
+
+#typingBubble {
+  position: relative;
+  width: 60px;
+  height: 35px;
+  display: block;
+  background-image: url("../images/typingBubble.png");
+  animation: typerBubble .8s steps(30) infinite;
+}
+@keyframes typerBubble {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1800px;
+ }
+}
+
+#typingBubbleSmall {
+  position: relative;
+  top: 10px;
+  width: 30px;
+  height: 18px;
+  display: block;
+  background-image: url("../images/typingBubbleSmall.png");
+  animation: typerBubbleSmall .8s steps(30) infinite;
+}
+@keyframes typerBubbleSmall {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -900px;
+ }
+}
+
+#spinnerBlack {
+  position: relative;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticSpinnerBlack.png");
+  animation: spinnerBlack .8s linear infinite;
+}
+@keyframes spinnerBlack {
+ from {
+   transform: rotate(0deg); 
+ }
+ to {
+   transform: rotate(360deg); 
+ }
+}
+
+#spinnerWhite {
+  position: relative;
+  top: -8px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticSpinnerWhite.png");
+  animation: spinnerWhite .8s linear infinite;
+}
+@keyframes spinnerWhite {
+ from {
+   transform: rotate(0deg); 
+ }
+ to {
+   transform: rotate(360deg); 
+ }
+}
+
+#checkWhite {
+  position: relative;
+  top: 3px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticCheckWhite.png");
+}
+
+#checkBlack {
+  position: relative;
+  top: -10px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticCheckBlack.png");
+}
+
+#failWhite {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticXWhite.png");
+}
+
+#failBlack {
+  position: relative;
+  top: -13px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticXBlack.png");
+}
+
+#resendWhite {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticResendWhite.png");
+}
+
+#resendBlack {
+  position: relative;
+  top: -13px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-image: url("../images/optimisticResendBlack.png");
+}
+
+
+.submitbutton {
+  -webkit-appearance:none;
+	font-family: 'bariol';
+	cursor: pointer;
+	position: absolute;
+	top: 420px;
+	text-decoration: none;
+	width: 70px;
+	height: 38px;
+	display: inline-block;
+
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 26px;
+	padding: 4px 15px;
+	
+	color: #FFF;
+	background-color: #03C294;
+	border-radius: 8px;
+	border: none;
+	outline: 0;
+	box-shadow: 0 5px #00A17B;
+
+	transition-property: background, color;
+	transition-duration: .3s, .1s;
+	transition-timing-function: linear;
+}
+
+.submitbutton:hover {
+  -webkit-appearance:none;
+	position: absolute;
+	top: 422px;
+	box-shadow: 0 3px #00A17B;
+	color: #FFF;
+	background: #03C294;
+}
+
+.submitbutton:active {
+  -webkit-appearance:none;
+	position: absolute;
+	top: 425px;
+	box-shadow: 0 0px #00A17B;
+	color: #FFF;
+	background: #03C294;
+}
+.buttontext {
+  -webkit-appearance:none;
+	position:absolute;
+	text-align: center;
+	line-height: 26px;
+	padding: 4px 15px;
+
+}
+
+#pulseLight {
+  position: absolute;
+  pointer-events: none;
+  top: 103px;
+  left: 100px;
+  z-index: 4;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url("../images/pulseLight.png");
+  animation: pulseLight .8s steps(25) infinite;
+}
+@keyframes pulseLight {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1250px;
+ }
+}
+
+#pulseDark {
+  position: absolute;
+  pointer-events: none;
+  top: 105px;
+  left: 100px;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url("../images/pulseDark.png");
+  animation: pulseDark .8s steps(25) infinite;
+}
+@keyframes pulseDark {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1250px;
+ }
+}
+
+/*THIS IS THE BUBBLE STYLING*/
+.menu-balloon,
+.menu-balloon-dark {
+  display: block;
+  position: relative;
+  font-weight: 500;
+}
+
+.menu-balloon {
+  position:absolute;
+  z-index: 5;
+  opacity:0;
+  width:135px;
+  left:80px;
+  top: 350px;
+  color: #222;
+  background-color: white;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+}
+
+.menu-balloon-dark {
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+}
+
+.menu-balloon-item {
+  font-family: 'Bariol';
+  margin-top: 4px;
+  font-size: 1em;
+  display: block;
+  padding: 4px 14px 8px 14px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.menu-balloon-ws {
+  border-radius: 6px 6px 6px 0;
+}
+
+.menu-balloon-ws:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: -10px;
+  box-sizing:border-box;
+  border: 5px solid white;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+/*END BUBBLE STYLING*/
+
+#botSpin {
+  position: absolute;
+  top: 325px;
+  left:-5px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/iso_bot_spin.png");
+/* 
+  animation: botSpin .8s steps(23) infinite; 
+}
+
+@keyframes botSpin {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1840px;
+ }
+ 
+ */
+}
+
+#botTalk {
+  position: absolute;
+  top: 325px;
+  left:-5px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/iso_bot_talk.png");
+  /* 
+animation: botTalk .8s steps(19) infinite;
+}
+@keyframes botTalk {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1520px;
+ }
+ */
+}
+
+#bot {
+  position: absolute;
+  top: 325px;
+  left:-5px;
+  width: 80px;
+  height: 85px;
+  display: block;
+  background-image: url("../images/bot.png");
+}
+
+#react-lol {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_lol.png");
+  animation: lol .8s steps(24) infinite;
+}
+@keyframes lol {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+.react-angry {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_angry.png");
+  animation: angry .8s steps(24) infinite;
+}
+@keyframes angry {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-wtf {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_wtf.png");
+  animation: wtf .8s steps(24) infinite;
+}
+@keyframes wtf {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-wow {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_wow.png");
+  animation: wow .8s steps(24) infinite;
+}
+@keyframes wow {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-sad {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_sad.png");
+  animation: sad .8s steps(24) infinite;
+}
+@keyframes sad {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-love {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_love.png");
+  animation: love .8s steps(24) infinite;
+}
+@keyframes love {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-party {
+  position: relative;
+  left: -5px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_party.png");
+  animation: party .8s steps(24) infinite;
+}
+@keyframes party {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+#react-pow {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_pow.png");
+  animation: pow .8s steps(23) infinite;
+}
+@keyframes pow {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1840px;
+ }
+}
+
+#react-hi {
+  position: relative;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("../images/react_hi.png");
+  animation: hi .8s steps(24) infinite;
+}
+@keyframes hi {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1920px;
+ }
+}
+
+.discoColor {
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  height: 80px;
+  width: 50px;
+  opacity: .5;
+  display: block;
+  border-radius:100px 100px 100px 100px;
+  -webkit-filter:blur(5px);
+  filter: blur(20px);
+}
+
+
+#disco {
+  position: relative;
+  top: 10px;
+  z-index: 3;
+  width: 68px;
+  height: 68px;
+  display: block;
+  background-image: url("../images/disco.png");
+  animation: disco .8s steps(29) infinite;
+}
+@keyframes disco {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -1943px;
+ }
+}
+
+#reflection {
+  position: absolute;
+  z-index: 2;
+  transform: scale(1.5);
+  top: 15px;
+  left: -15px;
+  width: 68px;
+  height: 68px;
+  display: block;
+  background-image: url("../images/reflection.png");
+  animation: reflection .8s steps(25) infinite;
+}
+@keyframes reflection {
+ from {
+   background-position: 0px;
+ }
+ to {
+   background-position: -2000px;
+ }
+}
+
